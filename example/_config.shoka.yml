@@ -53,19 +53,10 @@ post:
 # ---------------------------------------------------------------
 
 # Comments
-# Valine
-# For more information: https://valine.js.org, https://github.com/xCss/Valine
-valine:
-  appId: #这里不要忘了改
-  appKey: #这里不要忘了改
-  placeholder: ヽ(○´∀`)ﾉ♪ # Comment box placeholder
-  pageSize: 10 # Pagination size
-  lang: zh-CN
-  tagMember:
-    master:
-      # - deea5a8d259d17182a53be1772e4c182
-    friend:
-      - deea5a8d259d17182a53be1772e4c182
+# Waline https://waline.js.org/reference/client/props.html
+waline:
+  serverURL:      # 填入刚刚得到的后端 URL（必填）
+  lang: zh-TW     # 语言，默认 zh-CN
 
 # bgm
 audio:

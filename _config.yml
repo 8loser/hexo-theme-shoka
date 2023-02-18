@@ -181,37 +181,11 @@ creative_commons:
   language: deed.zh
 
 # Comments
-# Valine
-# For more information: https://github.com/amehime/MiniValine
-valine:
-  appId: #Your_appId
-  appKey: #Your_appkey
-  placeholder: ヽ(○´∀`)ﾉ♪ # Comment box placeholder
-  avatar: mp # Gravatar style : mp, identicon, monsterid, wavatar, robohash, retro
-  pageSize: 10 # Pagination size
-  lang: en
-  visitor: true # Article reading statistic
-  NoRecordIP: false # Whether to record the commenter IP
-  serverURLs: # When the custom domain name is enabled, fill it in here (it will be detected automatically by default, no need to fill in)
-  powerMode: true
-  tagMeta:
-    visitor: 新朋友
-    master: 主人
-    friend: 小伙伴
-    investor: 金主粑粑
-  tagColor:
-    master: "var(--color-orange)"
-    friend: "var(--color-aqua)"
-    investor: "var(--color-pink)"
-  tagMember:
-    master:
-      # - hash of master@email.com
-      # - hash of master2@email.com
-    friend:
-      # - hash of friend@email.com
-      # - hash of friend2@email.com
-    investor:
-      # - hash of investor1@email.com
+# Waline https://waline.js.org/reference/client/props.html
+waline:
+  serverURL:      # 填入刚刚得到的后端 URL（必填）
+  lang: zh-TW     # 语言，默认 zh-CN
+
 
 # bgm
 audio:
@@ -288,6 +262,7 @@ vendors:
     katex: npm/katex@0.12.0/dist/katex.min.css
     comment: css/comment.css
     fancybox: combine/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css,npm/justifiedGallery@3.8.1/dist/css/justifiedGallery.min.css
+    waline: https://unpkg.com/@waline/client@v2/dist/waline.css
   js:
     pace: npm/pace-js@1.0.2/pace.min.js
     pjax: npm/pjax@0.2.8/pjax.min.js
@@ -298,6 +273,6 @@ vendors:
     lazyload: npm/lozad@1/dist/lozad.min.js
     quicklink: npm/quicklink@2/dist/quicklink.umd.js
     fancybox: combine/npm/jquery@3.5.1/dist/jquery.min.js,npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js,npm/justifiedGallery@3.8.1/dist/js/jquery.justifiedGallery.min.js
-    valine: gh/amehime/MiniValine@4.2.2-beta10/dist/MiniValine.min.js
+    waline: npm/@waline/client/dist/Waline.min.js
     copy_tex: npm/katex@0.12.0/dist/contrib/copy-tex.min.js
     chart: npm/frappe-charts@1.5.0/dist/frappe-charts.min.iife.min.js
