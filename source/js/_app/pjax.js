@@ -62,6 +62,13 @@ const siteRefresh = function (reload) {
     options.el = '#comments';
     options.path = LOCAL.path;
     Waline(options);
+
+    Waline.Widget.RecentComments({
+      el: '#waline-recent',
+      serverURL: options.serverURL,
+      count: 10
+    });
+
     setTimeout(function(){
       positionInit(1);
       postFancybox('.v');
